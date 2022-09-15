@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+html {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    min-height: 100%;
+    color: red !important;
+}
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.center{
+    text-align: center;
+}
+a{
+    padding: 2px !important;
+}
+
+@media (min-width: 400px) and (max-width: 767px) {
+    li.nav-item {
+        margin: 0 0.1em;
+        min-width: 10px;
+        white-space: nowrap
+    }
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    li.nav-item {
+        margin: 0 1em;
+        min-width: 30px;
+        white-space: nowrap
+    }
+}
+
+a.nav-link {
+    color: #003976 !important;
+}
+
+
+body {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1280px;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    margin-top: 20px;
+    position: absolute !important;
+}
+
+li {
+}
+
+a {
+    min-width: 30px;
+    padding: 15px 20px;
+}
+
+    a.nav-link:hover {
+        font-weight: 500;
+    }
+
+    a.nav-link:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 1.5px;
+        left: 50%;
+        position: relative;
+        background: #003976;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    a.nav-link:hover:after {
+        width: 130%;
+        left: -15%;
+    }
+
+    a.navbar-brand > img {
+        max-width: 250px;
+        transition: 0.4s;
+    }
+
+#navbar {
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    max-width: 1280px;
+    z-index: 100;
+}
+
+#main-container {
+    padding-top: 130px !important;
+    padding: 8em 3em;
+    /*padding: 130px 60px;*/
+}
+
+
+#welcome-image {
+    /* Set a specific height */
+    /*min-height: 800px;*/
+    /* Create the parallax scrolling effect */
+    display: block;
+    margin: 10px 0px;
+   
+}
+
+img {
+    margin: 0;
+}
+
+#text-content {
+    margin: 30px 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    font-size: 16px;
+    text-align: justify;
+    padding: 30px;
+    line-height: 24px;
+}
+
+/*title events, courses*/
+.title-event {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Bad Script', cursive;
+}
+
+    .title-event:before, .title-event:after {
+        content: "";
+        flex: 1 1;
+        border-bottom: 1px solid;
+        margin: auto;
+    }
+
+    .title-event:before {
+        margin-right: 10px
+    }
+
+    .title-event:after {
+        margin-left: 10px
+    }
+
+.navbar > .container, 
+.navbar > .container-fluid, 
+.navbar > .container-lg, 
+.navbar > .container-md, 
+.navbar > .container-sm, 
+.navbar > .container-xl, 
+.navbar > .container-xxl {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*cards*/
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid #cccccc;
+    color: #696969;
+    padding: 0.5rem;
+    text-transform: lowercase;
+}
+
+.btn--block {
+    display: block;
+    width: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cards__item {
+    display: flex;
+    padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+    .cards__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 56rem) {
+    .cards__item {
+        width: 33.3333%;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+    .card:hover .card__image {
+        filter: contrast(100%);
+    }
+
+.card__content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    filter: contrast(70%);
+    overflow: hidden;
+    position: relative;
+    transition: filter 0.5s cubic-bezier(0.43, 0.41, 0.22, 0.91);
+}
+
+    .card__image::before {
+        content: "";
+        display: block;
+        padding-top: 56.25%;
+    }
+
+@media (min-width: 40rem) {
+    .card__image::before {
+        padding-top: 66.6%;
+    }
+}
+
+.card__image--river {
+    background-image: url(https://unsplash.it/800/600?image=11);
+}
+
+.card__image--record {
+    background-image: url(https://unsplash.it/800/600?image=39);
+}
+
+.card__image--fence {
+    background-image: url(https://unsplash.it/800/600?image=59);
+}
+
+.card__title {
+    color: #696969;
+    font-size: 1.25rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card__text {
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+}
+
