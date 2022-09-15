@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using TeodoraGetsova.Core.Entities;
 
 namespace TeodoraGetsova.Core.Data
 {
@@ -13,6 +14,12 @@ namespace TeodoraGetsova.Core.Data
             : base(options)
         {
         }
+
+        public DbSet<EventBase> Events { get; set; }
+        public DbSet<Image> Images { get; set; }
+        public DbSet<EventType> Types { get; set; }
+
+
 
 
     }

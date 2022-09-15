@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace TeodoraGetsova.Core.Entities
 {
-    internal class Type
+    public class Image
     {
+        public Guid Id { get; set; }
+        public string Name { get; set; }
+        public string ImagePath { get; set; }
     }
 }

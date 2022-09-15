@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using TeodoraGetsova.Data;
+using TeodoraGetsova.Core.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
