@@ -16,7 +16,7 @@ namespace TeodoraGetsova.Core.Data
         }
 
         public DbSet<EventBase> Events { get; set; }
-        public DbSet<Image> Images { get; set; }
+        public DbSet<EventImage> Images { get; set; }
         public DbSet<EventType> Types { get; set; }
 
 

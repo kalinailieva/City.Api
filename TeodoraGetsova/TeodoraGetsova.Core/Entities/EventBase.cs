@@ -15,7 +15,7 @@ namespace TeodoraGetsova.Core.Entities
         public string? ImageUrl { get; set; }
 
         [Required]
-        public string Title { get; set; }
+        public string? Title { get; set; }
 
         public string? SubTitle { get; set; }
 

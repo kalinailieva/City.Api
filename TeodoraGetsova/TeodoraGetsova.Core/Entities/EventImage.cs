@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TeodoraGetsova.Core.Entities
 {
-    public class Image
+    public class EventImage
     {
         public Guid Id { get; set; }
         public string Name { get; set; }
